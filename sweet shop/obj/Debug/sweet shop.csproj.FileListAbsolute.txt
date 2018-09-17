@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\sweet shop\sweet shop\bin\Debug\sweet shop.exe
+C:\Users\user\source\repos\sweet shop\sweet shop\bin\Debug\sweet shop.pdb
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet shop.csprojAssemblyReference.cache
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form1.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form2.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form3.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form4.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Properties.Resources.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet shop.csproj.GenerateResource.cache
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet shop.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet shop.exe
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet shop.pdb
+C:\Users\user\source\repos\sweet shop\sweet shop\bin\Debug\MySql.Data.dll
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet shop.csproj.CopyComplete
+C:\Users\user\source\repos\sweet shop\sweet shop\bin\Debug\sweet shop.exe.config
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form5.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form6.resources
