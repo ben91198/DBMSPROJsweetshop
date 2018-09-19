@@ -38,7 +38,7 @@ namespace sweet_shop
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("inserted information");
                 con.Close();
-                Form4 obj = new Form4(this.textBox1.Text);
+                Form4 obj = new Form4();
                 obj.Show();
             }
             catch(MySqlException exep)

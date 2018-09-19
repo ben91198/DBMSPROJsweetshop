@@ -25,7 +25,7 @@ namespace sweet_shop
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form4 obj = new Form4(this.textBox1.Text);
+            Form4 obj = new Form4();
             obj.Show();
         }
         MySqlConnection con;

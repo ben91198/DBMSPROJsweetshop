@@ -15,3 +15,4 @@ C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet shop.csproj.Cop
 C:\Users\user\source\repos\sweet shop\sweet shop\bin\Debug\sweet shop.exe.config
 C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form5.resources
 C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form6.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form7.resources

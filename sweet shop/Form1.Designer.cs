@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.staffin = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.billingbtn = new System.Windows.Forms.Button();
+            this.update = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,55 +44,42 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "MONGONESE";
             // 
-            // button1
+            // billingbtn
             // 
-            this.button1.Location = new System.Drawing.Point(228, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "New User";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.billingbtn.Location = new System.Drawing.Point(317, 153);
+            this.billingbtn.Name = "billingbtn";
+            this.billingbtn.Size = new System.Drawing.Size(126, 23);
+            this.billingbtn.TabIndex = 1;
+            this.billingbtn.Text = "billing";
+            this.billingbtn.UseVisualStyleBackColor = true;
+            this.billingbtn.Click += new System.EventHandler(this.billingbtn_Click);
             // 
-            // button2
+            // update
             // 
-            this.button2.Location = new System.Drawing.Point(485, 182);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Existing User";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.update.Location = new System.Drawing.Point(317, 210);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(126, 23);
+            this.update.TabIndex = 2;
+            this.update.Text = "update stock";
+            this.update.UseVisualStyleBackColor = true;
             // 
-            // staffin
+            // add
             // 
-            this.staffin.Location = new System.Drawing.Point(228, 260);
-            this.staffin.Name = "staffin";
-            this.staffin.Size = new System.Drawing.Size(75, 23);
-            this.staffin.TabIndex = 5;
-            this.staffin.Text = "staff info";
-            this.staffin.UseVisualStyleBackColor = true;
-            this.staffin.Click += new System.EventHandler(this.staffin_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(485, 259);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "product info";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.add.Location = new System.Drawing.Point(317, 265);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(126, 23);
+            this.add.TabIndex = 3;
+            this.add.Text = "add new product";
+            this.add.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.staffin);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.add);
+            this.Controls.Add(this.update);
+            this.Controls.Add(this.billingbtn);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "HOME PAGE";
@@ -105,10 +91,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button staffin;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button billingbtn;
+        private System.Windows.Forms.Button update;
+        private System.Windows.Forms.Button add;
     }
 }
 

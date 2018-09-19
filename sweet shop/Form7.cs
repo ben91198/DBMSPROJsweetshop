@@ -7,23 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-
 namespace sweet_shop
 {
-    public partial class Form1 : Form
+    public partial class Form7 : Form
     {
-        public Form1()
+        public Form7()
         {
             InitializeComponent();
         }
 
-        private void billingbtn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            Form4 obj = new Form4();
-            obj.ShowDialog();
-            this.Visible = true;
             
+        }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
+            this.Close();
         }
     }
 }
