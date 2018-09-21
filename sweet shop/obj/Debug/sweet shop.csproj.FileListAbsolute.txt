@@ -16,3 +16,9 @@ C:\Users\user\source\repos\sweet shop\sweet shop\bin\Debug\sweet shop.exe.config
 C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form5.resources
 C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form6.resources
 C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form7.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form10.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form11.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form12.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form8.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form9.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.dailysales.resources
