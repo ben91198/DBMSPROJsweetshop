@@ -88,7 +88,7 @@ namespace sweet_shop
                 de.Read();
 
                 var query = "insert into " + tab + "(p_id,p_name,p_qty,p_price) values("+de[0].ToString()+",'" + this.comboBox1.Text + "'," + this.textBox2.Text + "," + this.costlab.Text + ")";
-                MessageBox.Show(query);
+                //MessageBox.Show(query);
                 de.Close();
                 com = new MySqlCommand(query, con);
                 com.ExecuteNonQuery();
@@ -107,7 +107,7 @@ namespace sweet_shop
                 if(res==DialogResult.Yes)
                 {
                     var query = "update " + tab + " set p_qty=" + this.textBox2.Text + ", p_price=" + this.costlab.Text + " where p_name='" + this.comboBox1.Text+"'";
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
                     com = new MySqlCommand(query, con);
                     com.ExecuteNonQuery();
                     datafill();
@@ -149,17 +149,25 @@ namespace sweet_shop
         string cst;
         private void calculate()
         {
-            if (this.textBox2.Text == "")
+            float qty;
+            if (this.textBox2.Text == ".".ToString())
             {
-                this.label6.Text = "0";
-                this.costlab.Text = "";
-                return;
+                  this.label6.Text = "0.";
+                //this.costlab.Text = "";
+                 //return;
             }
-            var cost = float.Parse(cst);
-            var qty = float.Parse(this.textBox2.Text);
-            var str1 = cost * qty;
-            this.costlab.Text = str1.ToString();
-            
+            if (float.TryParse(this.textBox2.Text, out qty))
+            //if (this.textBox2.Text == "")
+            {
+                //  this.label6.Text = "0";
+                //this.costlab.Text = "";
+                // return;
+
+                var cost = float.Parse(cst);
+                //var qty = float.Parse(this.textBox2.Text);
+                var str1 = cost * qty;
+                this.costlab.Text = str1.ToString();
+            }
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -190,16 +198,7 @@ namespace sweet_shop
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text != "")
-            {
-                var str = "select p_price from product where p_name='" + this.comboBox1.Text + "'";
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(str, con);
-                MySqlDataReader dr = cmd.ExecuteReader();
-                dr.Read();
-                cst = dr[0].ToString();
-                con.Close();
-            }
+            
         }
         string cid;
         private void button1_Click(object sender, EventArgs e)
@@ -233,7 +232,7 @@ namespace sweet_shop
             cid = dr[0].ToString();
             dr.Close();
             var func = "call process_trans(" + cid + "," + this.label6.Text + "," + t_id + ")";
-            MessageBox.Show(func);
+            //MessageBox.Show(func);
             com = new MySqlCommand(func,con);
             com.ExecuteNonQuery();
             
@@ -268,7 +267,7 @@ namespace sweet_shop
                 var price = dr[2].ToString();
                 //dr.Close();
                 var str = "insert into purchase(p_id,p_qty,amt,c_id) values(" + p_id + "," + qty + "," + price + "," + cid + ")";
-                MessageBox.Show(str);
+                //MessageBox.Show(str);
                 write.Open();
                 MySqlCommand temp1 = new MySqlCommand(str,write);
                 temp1.ExecuteNonQuery();
@@ -300,7 +299,20 @@ namespace sweet_shop
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox1.Text != "")
+            {
+                var str = "select p_price from product where p_name='" + this.comboBox1.Text + "'";
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand(str, con);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                cst = dr[0].ToString();
+                con.Close();
+            }
+            if (this.textBox2.Text!="")
+            {
+                calculate();
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
