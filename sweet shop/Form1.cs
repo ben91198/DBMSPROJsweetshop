@@ -52,5 +52,11 @@ namespace sweet_shop
             this.Visible = true;
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dailysales obj = new dailysales();
+            obj.Show();
+        }
     }
 }
