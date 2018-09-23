@@ -239,9 +239,10 @@ namespace sweet_shop
             con.Close();
             updat_tab();
             //com = new MySqlCommand("drop table "+tab,con);
-            this.Visible = false;
-            Form7 fobj = new Form7(tab,this.label6.Text);
+            //this.Visible = false;
+            Form14 fobj = new Form14(tab,this.label6.Text,t_id);
             fobj.ShowDialog();
+            //this.Refresh();
             this.Close();
         }
 
@@ -266,7 +267,7 @@ namespace sweet_shop
                 var qty = dr[1].ToString();
                 var price = dr[2].ToString();
                 //dr.Close();
-                var str = "insert into purchase(p_id,p_qty,amt,c_id) values(" + p_id + "," + qty + "," + price + "," + cid + ")";
+                var str = "insert into purchase(trans_id,p_id,p_qty,amt,c_id) values("+t_id+"," + p_id + "," + qty + "," + price + "," + cid + ")";
                 //MessageBox.Show(str);
                 write.Open();
                 MySqlCommand temp1 = new MySqlCommand(str,write);
@@ -278,12 +279,12 @@ namespace sweet_shop
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            var i = dataGridView1.SelectedCells[0].RowIndex;
+            var i = Convert.ToInt32(dataGridView1.SelectedCells[0].RowIndex);
             con.Open();
             MySqlCommand cmd;
-            if (dataGridView1.Rows.Count > 1 && i != dataGridView1.Rows.Count-1)
+            if (dataGridView1.Rows.Count > 1 && i <= dataGridView1.Rows.Count-1&& i>-1)
             {
-                cmd = new MySqlCommand("delete from "+tab+" where p_name='"+ dataGridView1.SelectedRows[i].Cells[1].Value.ToString()+"'", con);
+                cmd = new MySqlCommand("delete from "+tab+" where p_name='"+ dataGridView1.Rows[i].Cells[1].Value.ToString()+"'", con);
                 cmd.ExecuteNonQuery();
                 datafill();
 
@@ -318,6 +319,15 @@ namespace sweet_shop
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        
+        private void Form4_Leave(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "drop table " + tab;
+            MySqlCommand com = new MySqlCommand(query,con);
+            com.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

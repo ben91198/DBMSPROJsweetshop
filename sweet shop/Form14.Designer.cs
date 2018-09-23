@@ -1,6 +1,6 @@
 ﻿namespace sweet_shop
 {
-    partial class Form1
+    partial class Form14
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // label1
+            // crystalReportViewer1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Bright", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(264, 187);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(452, 72);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "MONGONESE";
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.crystalReportViewer1.TabIndex = 0;
             // 
-            // Form1
+            // Form14
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.RightToLeftLayout = true;
+            this.Controls.Add(this.crystalReportViewer1);
+            this.Name = "Form14";
+            this.Text = "Form14";
+            this.Load += new System.EventHandler(this.Form14_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }
-

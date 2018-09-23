@@ -202,7 +202,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(540, 423);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 20);
@@ -252,9 +252,9 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox1);
             this.Name = "Form4";
-            this.Text = "Form4";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form4_FormClosed);
             this.Load += new System.EventHandler(this.Form4_Load);
+            this.Leave += new System.EventHandler(this.Form4_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
