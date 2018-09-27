@@ -78,5 +78,10 @@ namespace sweet_shop
             }
             con.Close();
         }
+
+        private void Form8_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

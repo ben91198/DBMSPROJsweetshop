@@ -130,6 +130,7 @@
             this.Name = "Form9";
             this.Text = "Form9";
             this.Load += new System.EventHandler(this.Form9_Load);
+            this.Leave += new System.EventHandler(this.Form9_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

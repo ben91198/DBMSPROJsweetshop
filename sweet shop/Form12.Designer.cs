@@ -146,6 +146,7 @@
             this.Name = "Form12";
             this.Text = "Form12";
             this.Load += new System.EventHandler(this.Form12_Load);
+            this.Leave += new System.EventHandler(this.Form12_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();
 

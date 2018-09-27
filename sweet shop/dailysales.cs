@@ -65,6 +65,31 @@ namespace sweet_shop
             cal();
         }
 
+        private void dailysales_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dateTimePicker1.Value = DateTime.Now;
+            dateTimePicker2.Value = DateTime.Now;
+            dateTimePicker1.Value = dateTimePicker1.Value.AddDays(-7);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dateTimePicker1.Value = DateTime.Now;
+            dateTimePicker2.Value = DateTime.Now;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dateTimePicker1.Value = DateTime.Now;
+            dateTimePicker2.Value = DateTime.Now;
+            dateTimePicker1.Value = dateTimePicker1.Value.AddMonths(-1);
+        }
+
         private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)
         {
             con.Open();

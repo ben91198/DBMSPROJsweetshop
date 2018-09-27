@@ -44,3 +44,4 @@ C:\Users\user\source\repos\sweet shop\sweet shop\bin\Debug\CrystalDecisions.Repo
 C:\Users\user\source\repos\sweet shop\sweet shop\bin\Debug\stdole.dll
 C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form13.resources
 C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form14.resources
+C:\Users\user\source\repos\sweet shop\sweet shop\obj\Debug\sweet_shop.Form15.resources

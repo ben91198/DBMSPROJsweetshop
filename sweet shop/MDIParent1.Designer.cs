@@ -30,14 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.bILLINGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updatePriceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uPDATESTOCKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aDDNEWPRODUCTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dAILYSALESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.dELETEPRODUCTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -49,28 +50,13 @@
             this.updatePriceToolStripMenuItem,
             this.uPDATESTOCKToolStripMenuItem,
             this.aDDNEWPRODUCTSToolStripMenuItem,
-            this.dAILYSALESToolStripMenuItem});
+            this.dAILYSALESToolStripMenuItem,
+            this.dELETEPRODUCTToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(973, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 467);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(973, 22);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
-            this.toolStripStatusLabel.Text = "Status";
             // 
             // bILLINGToolStripMenuItem
             // 
@@ -107,6 +93,29 @@
             this.dAILYSALESToolStripMenuItem.Text = "SALES";
             this.dAILYSALESToolStripMenuItem.Click += new System.EventHandler(this.dAILYSALESToolStripMenuItem_Click);
             // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 467);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(973, 22);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabel.Text = "Status";
+            // 
+            // dELETEPRODUCTToolStripMenuItem
+            // 
+            this.dELETEPRODUCTToolStripMenuItem.Name = "dELETEPRODUCTToolStripMenuItem";
+            this.dELETEPRODUCTToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.dELETEPRODUCTToolStripMenuItem.Text = "DELETE PRODUCT";
+            this.dELETEPRODUCTToolStripMenuItem.Click += new System.EventHandler(this.dELETEPRODUCTToolStripMenuItem_Click);
+            // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,6 +148,7 @@
         private System.Windows.Forms.ToolStripMenuItem uPDATESTOCKToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aDDNEWPRODUCTSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dAILYSALESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dELETEPRODUCTToolStripMenuItem;
     }
 }
 

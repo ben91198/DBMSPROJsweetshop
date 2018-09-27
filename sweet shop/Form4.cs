@@ -75,12 +75,28 @@ namespace sweet_shop
         
         private void add_Click(object sender, EventArgs e)
         {
-            
+            if(comboBox1.Text==""||textBox2.Text=="")
+            {
+                MessageBox.Show("Enter valid product information");
+                return;
+            }
             con.Open();
             MySqlCommand com = new MySqlCommand("select p_name from "+tab+" where p_name='"+this.comboBox1.Text+"'",con);
             MySqlDataReader de = com.ExecuteReader();
             if (!de.Read())
             {
+                de.Close();
+                com = new MySqlCommand("select p_qty from product where p_name='" + this.comboBox1.Text+"'", con);
+                de = com.ExecuteReader();
+                de.Read();
+                var cost = float.Parse(de[0].ToString());
+                var qty= float.Parse(textBox2.Text);
+                if(cost<qty)
+                {
+                    MessageBox.Show("Invalid Quantity");
+                    con.Close();
+                    return;
+                }
                 de.Close();
                 MySqlCommand temp = new MySqlCommand("select p_id from product where p_name='" + this.comboBox1.Text + "'", con);
                 
@@ -139,6 +155,11 @@ namespace sweet_shop
 
         private void Form4_FormClosed(object sender, FormClosedEventArgs e)
         {
+            con.Open();
+            string query = "drop table " + tab;
+            MySqlCommand com = new MySqlCommand(query, con);
+            com.ExecuteNonQuery();
+            con.Close();
             //Application.Exit();
         }
 
@@ -323,11 +344,19 @@ namespace sweet_shop
         
         private void Form4_Leave(object sender, EventArgs e)
         {
-            con.Open();
-            string query = "drop table " + tab;
-            MySqlCommand com = new MySqlCommand(query,con);
-            com.ExecuteNonQuery();
-            con.Close();
+            try
+            {
+                con.Open();
+                string query = "drop table " + tab;
+                MySqlCommand com = new MySqlCommand(query, con);
+                com.ExecuteNonQuery();
+                con.Close();
+                this.Close();
+            }
+            catch(MySqlException exep)
+            {
+
+            }
         }
     }
 }

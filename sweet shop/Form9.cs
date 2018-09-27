@@ -67,5 +67,10 @@ using MySql.Data.MySqlClient;
             }
             con.Close();
         }
+
+        private void Form9_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

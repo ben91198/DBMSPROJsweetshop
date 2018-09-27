@@ -23,6 +23,12 @@ namespace sweet_shop
             tid = t_id;
 
         }
+
+        private void Form14_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
         string conStr = "server=localhost;user id = root; password=mysqlserver;database='sweet_shop'";
         private void Form14_Load(object sender, EventArgs e)
         {

@@ -46,5 +46,10 @@ namespace sweet_shop
         {
             con = new MySqlConnection("server = localhost; user id = root; password = mysqlserver; database = 'sweet_shop';");
         }
+
+        private void Form12_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

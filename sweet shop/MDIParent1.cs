@@ -153,5 +153,12 @@ namespace sweet_shop
 
             Showform(f);
         }
+
+        private void dELETEPRODUCTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form15 f = new Form15();
+
+            Showform(f);
+        }
     }
 }
